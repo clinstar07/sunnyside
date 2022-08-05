@@ -17,7 +17,7 @@ html {
 body {
   font-family: "Barlow", sans-serif;
 }
-/* update */
+
 h1,
 h2,
 h3,
@@ -245,6 +245,18 @@ div.flex img {
   .graphic-photo h2 {
     margin-bottom: 3rem;
   }
+
+  .design{
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translate(-50%,-50%);
+  }
+
+  .design-1 {
+    position: absolute;
+    top: 15%;
+  }
 }
 
 .testimonial {
@@ -310,31 +322,32 @@ div.flex img {
 
 footer {
   background-color: hsl(168, 34%, 41%);
-  text-align: center;
+   text-align: center; 
   padding-top: 4rem;
   gap: 3rem;
+  height: 20rem;
 }
 
-section.social-links {
-  color: hsl(212, 27%, 19%);
-  font-size: 2.5rem;
-  padding-bottom: 5rem;
-  margin-top: -2rem;
+.footer-nav ul{
+  margin: 3rem;
   display: flex;
-
-  left: 50%;
-  transform: translateXY(-50%);
-  gap: 3rem;
-  margin-left: 43%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
 }
 
-.footer-nav ul {
-  text-align: center;
-  padding-top: 2.5rem;
-  margin-inline: auto;
-  color: hsl(168, 34%, 49%);
-  gap: 4rem;
+.footer-nav a{
+  text-decoration: none;
+  color:hsl(212, 27%, 19%) ;
+  font-weight: 700;
+  font-size: 20px;
 }
 
-footer svg {
+.footer-nav li {
+  list-style: none;
+}
+.social-links a {
+  text-decoration: none;
+  
 }
