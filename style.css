@@ -78,7 +78,7 @@ header h1 {
 /* media query for the mobile view */
 @media (max-width: 768px) {
   nav ul {
-   transform: scaleY(0);
+    transform: scaleY(0);
     display: block;
     position: absolute;
     top: 5rem;
@@ -92,15 +92,14 @@ header h1 {
     transform-origin: top;
   }
   /* we use border to create triangle */
-  nav ul::before{
-    content: '';
-    border-left: 25px solid transparent ;
-     border-right: 25px solid white; 
+  nav ul::before {
+    content: "";
+    border-left: 25px solid transparent;
+    border-right: 25px solid white;
     border-top: 25px solid transparent;
     position: absolute;
     top: -25px;
     right: 0;
-    
   }
 
   nav ul li {
@@ -245,17 +244,12 @@ div.flex img {
   .graphic-photo h2 {
     margin-bottom: 3rem;
   }
-
-  .design{
-    position: absolute;
-    left: 50%;
-    top: -30%;
-    transform: translate(-50%,-50%);
+  .image {
+    flex-wrap: wrap;
   }
 
-  .design-1 {
-    position: absolute;
-    top: 15%;
+  .image img {
+    max-width: 50%;
   }
 }
 
@@ -318,28 +312,39 @@ div.flex img {
   .image img {
     max-width: 50%;
   }
+
+  .design {
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .design-1 {
+    position: absolute;
+    top: 15%;
+  }
 }
 
 footer {
   background-color: hsl(168, 34%, 41%);
-   text-align: center; 
+  text-align: center;
   padding-top: 4rem;
   gap: 3rem;
   height: 20rem;
 }
 
-.footer-nav ul{
+.footer-nav ul {
   margin: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  
 }
 
-.footer-nav a{
+.footer-nav a {
   text-decoration: none;
-  color:hsl(212, 27%, 19%) ;
+  color: hsl(212, 27%, 19%);
   font-weight: 700;
   font-size: 20px;
 }
@@ -349,5 +354,56 @@ footer {
 }
 .social-links a {
   text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .image {
+    flex-wrap: wrap;
+  }
+
+  .image img {
+    max-width: 50%;
+  }
+
+  .design {
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    transform: translate(-50%, -50%);
+    font-size: 60rem;
+  }
+
+  .design-1 {
+    position: absolute;
+    top: 15%;
+  }
+}
+
+@media (max-width:400px){
+  .image {
+    flex-wrap: wrap;
+  }
+
+  .image img {
+    max-width: 50%;
+  }
+
   
+  .design {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+  
+  }
+
+  .design-1 {
+    position: absolute;
+    top: 50%;
+  }
+
+  .book{
+    width: 100%;
+  
+    }
 }
